@@ -1,0 +1,141 @@
+.cart {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+
+    & .plus {
+        color: white;
+        font-size: 100px;
+        font-weight: 1;
+        position: relative;
+        left: 60px;
+        cursor: pointer;
+
+        &:hover {
+            color: rgba(254, 196, 88, 1);
+        }
+    }
+
+    & .sum {
+      font-size: 60px;
+      color: white;
+      position: relative;
+      left: 40px;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+    }
+    &__list {
+        width: 60%;
+        margin: 0 auto;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        border: 1px solid rgba(256,256,256, .2);
+        background-color: rgba(0,0,0,.7);
+        box-shadow: 0 0 20px rgba(256,256,256, .1);
+        &-title, &-price  {
+            width: 250px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+        &-img {
+            height: 125px;
+            width: 250px;
+            object-fit: cover;
+        }
+        & ::selection {
+            background: transparent;
+        }
+    }
+    &__close {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        top: -10px;
+        right: -10px;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid #fff;
+        cursor: pointer;
+
+        &:hover {
+            color: rgba(254, 196, 88, 1);
+            border-color: rgba(254, 196, 88, 1);
+        }
+    }
+
+}
+
+.btn {
+        width: 150px;
+        height: 40px;
+        border: none;
+        background-color: rgba(0,0,0,.7);
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        left: 46%;
+        top: 30px;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: rgba(0,0,0,1);
+        }
+}
+
+@media(max-width: 1770px) {
+    .cart {
+        display: grid;
+        grid-template-columns: 355px;
+        justify-content: center;
+        &__item {
+            flex-direction: column;
+            width: 355px;
+
+            &-img {
+               position: relative;
+               top: -110px;
+            }
+     
+             &-title, &-price {
+                 position: relative;
+                 bottom: 100px;
+             }
+        }
+
+        &__list {
+            margin: 0;
+        }
+
+        & .plus {
+            left: 3px;
+            top: 260px;
+        }
+
+        &__list {
+            width: 20%;
+        }
+
+        & .sum {
+            left: 0px;
+            top: -110px;
+        }
+
+        .btn {
+            left: 105px;
+        }
+    }
+}
