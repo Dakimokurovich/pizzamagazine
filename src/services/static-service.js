@@ -4,31 +4,31 @@ export default class StaticService {
     getMenuItems = async () => {
         const menu = [
             {
-                "title": "Hurchanessa",
+                "title": "AngryVictor",
                 "price": 12,
                 "url": img1,
                 "id": 1
             },
             {
-                "title": "Gayorgia",
+                "title": "Leonchick",
                 "price": 10,
                 "url": img2,
                 "id": 2
             },
             {
-                "title": "Cumgnoma",
+                "title": "Florida",
                 "price": 13,
                 "url": img3,
                 "id": 3
             },
             {
-                "title": "Memozi",
+                "title": "ElenaGlazova",
                 "price": 8,
                 "url": img4,
                 "id": 4
             },
             {
-                "title": "Brushavska",
+                "title": "YellowEye",
                 "price": 25,
                 "url": img5,
                 "id": 5
